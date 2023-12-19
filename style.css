@@ -1,0 +1,105 @@
+/* Start Variables */
+:root {
+    /* Fonts */
+    --f1-font: 'Karla', sans-serif;
+    /* Colors  */
+    --c1-color: hsl(179, 62%, 43%);
+    --c2-color: hsl(71, 73%, 54%);
+    --c3-color: hsl(204, 43%, 93%);
+    --c4-color: hsl(218, 22%, 67%);
+}
+/* End Variables */
+
+/* Start Global Rules */
+*{margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+html{background-color: var(--c3-color);}
+body{
+    font-size: 16px;    font-family: var(--f1-font);
+    min-height: 100vh; display: flex; justify-content: center; align-items: center;
+}
+/* End Global Rules */
+
+main{box-shadow: 0 0 1.675rem #05050524;}
+main .container{
+    width: 635px;   margin: 0 auto;
+    display: flex;  flex-wrap: wrap;
+}
+@media screen and (max-width: 1110px) {
+    main .container{
+        width: 310px;   flex-direction: column;
+    }
+}
+main .container > div{padding: 45px;}   
+@media screen and (max-width: 1110px) {
+    main .container > div{width: 100% !important; padding: 30px 20px;}
+}
+main .container .join-us{
+    width: 100%;    background-color: white;
+    border-radius: 10px 10px 0 0;  
+}
+main .container .join-us h2{
+    color: var(--c1-color); font-weight: 700;   margin-bottom: 25px; font-size: 25px;
+}
+main .container .join-us span{
+    display: block; font-size: 20px; font-weight: 700; color: var(--c2-color);
+    margin-bottom: 12.5px;
+}
+main .container .join-us p{
+    color: var(--c4-color);  font-weight: 400;
+}
+main .container .monthly-subs{
+    width: 50%;   background-color: var(--c1-color);
+    border-radius: 0 0 0 10px;  
+}
+@media screen and (max-width: 1110px) {
+    main .container .monthly-subs{border-radius: 0;}
+}
+main .container .monthly-subs h3,
+main .container .why-us h3{
+    color: white;   font-size: 19px;    margin-bottom: 12.5px;
+}
+main .container .monthly-subs .price{display: flex; align-items: center; margin-bottom: 12.5px;}
+main .container .monthly-subs .price span:first-child{
+    margin-right: 7px;  font-size: 30px;  font-weight: 700;  color:white;
+}
+main .container .monthly-subs .price span:last-child{
+    color: hsla(203, 44%, 93%, 0.644);    
+}
+main .container .monthly-subs .p-txt{
+    letter-spacing: -0.3px;   margin-bottom: 25px;
+    color: white;
+    text-shadow: 1px 0px 1px rgba(255, 255, 255, 0.445);
+}
+main .container .monthly-subs button{
+    width: 100%;    background-color: var(--c2-color);  border: none;
+    padding: 15px 25px;     color: white; font-size: 17px; font-weight: 700;
+    box-shadow: 0 0 1.675rem #05050524; border-radius: 6px; cursor: pointer;
+}
+main .container .why-us{
+    width: 50%; background-color: hsla(179, 62%, 43%, 0.75);
+    border-radius: 0 0 10px 0; 
+}
+@media screen and (max-width: 1110px) {
+    main .container .why-us{
+        border-radius: 0 0 10px 10px; 
+    }
+}
+main .container .why-us ul{
+    list-style: none;
+    color: hsla(203, 44%, 93%, 0.8); 
+}
+main .container .why-us ul li{
+    margin-bottom: 3px;
+}
+/* Media Rules */
+@media screen and (max-width: 1110px) {
+    main .container .join-us h2{
+        font-size: 20px;
+    }
+    main .container .join-us span{
+        font-size: 16px;
+    }
+    main .container .join-us p{
+        font-size: 14.5px;
+    }
+}
